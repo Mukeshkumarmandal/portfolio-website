@@ -1,0 +1,781 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Personal portfolio of a Computer Science Student & Developer — projects, skills, and contact." />
+  <title>Mukesh Kumar Mandal — Computer Science Student & Developer</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="dark">
+  <!-- Loading Screen -->
+  <div class="loading" id="loading">
+    <div class="loading-spinner">
+      <div class="cube">
+        <div class="face front"></div>
+        <div class="face back"></div>
+        <div class="face right"></div>
+        <div class="face left"></div>
+        <div class="face top"></div>
+        <div class="face bottom"></div>
+      </div>
+      <p>Loading Portfolio...</p>
+    </div>
+  </div>
+
+  <header class="nav" id="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#">
+        <span class="brand-icon">💻</span>
+        <span>MUKESH</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#home">
+          <i class="fas fa-home"></i>
+          <span>Home</span>
+        </a>
+        <a href="#projects">
+          <i class="fas fa-code"></i>
+          <span>Projects</span>
+        </a>
+        <a href="#about">
+          <i class="fas fa-user"></i>
+          <span>About</span>
+        </a>
+        <a href="#skills">
+          <i class="fas fa-tools"></i>
+          <span>Skills</span>
+        </a>
+        <a href="#experience">
+          <i class="fas fa-briefcase"></i>
+          <span>Experience</span>
+        </a>
+        <a href="#contact">
+          <i class="fas fa-envelope"></i>
+          <span>Contact</span>
+        </a>
+        <a id="resume-link" href="https://drive.google.com/file/d/1XPsVCE4UKmrhnYprVBGvX3IZ_Hy7nUn7/view" class="cta" target="_blank" rel="noopener noreferrer">
+          <i class="fas fa-download"></i>
+          <span>Download CV</span>
+        </a>
+      </nav>
+      <button class="burger" aria-label="Toggle menu" id="burger">
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+        <span class="burger-line"></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <h1 class="hero-title-wrap">
+            <span class="hero-title" data-text="Innovative Developer">Innovative Developer</span>
+            <span class="hero-subtitle">Problem Solver & Tech Enthusiast</span>
+          </h1>
+          <p class="hero-description">
+            Computer Science Student at Khulna University specializing in Full-Stack Development, 
+            AI Solutions, and Scalable Web Applications. Passionate about turning ideas into reality.
+          </p>
+          
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number" data-count="15">0</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="3">0</span>
+              <span class="stat-label">Internships</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="8">0</span>
+              <span class="stat-label">Technologies</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number" data-count="5">0</span>
+              <span class="stat-label">Languages</span>
+            </div>
+          </div>
+          
+          <div class="hero-ctas">
+            <a class="btn primary" href="#projects">
+              <i class="fas fa-code"></i>
+              <span>View Projects</span>
+            </a>
+            <a class="btn ghost" href="#contact">
+              <i class="fas fa-paper-plane"></i>
+              <span>Contact Me</span>
+            </a>
+            <a class="btn outline" href="#about">
+              <i class="fas fa-user"></i>
+              <span>About Me</span>
+            </a>
+          </div>
+        </div>
+        
+        <div class="hero-profile reveal">
+          <div class="profile-container" id="profile-container">
+            <div class="profile-face profile-front">
+              <div class="profile-image">
+                <!-- Add your image here - Replace with your actual image path -->
+                <img src="C:\Users\User\Documents\Mukesh Kumar Mandal\assets\mukeshpp.jpeg" 
+                     alt="Mukesh Kumar Mandal" 
+                     id="profile-img"
+                     onerror="this.src='https://drive.google.com/file/d/16TWqJzYgY52mbe_RtnrF6go_zv2250P-/view'">
+                <div class="profile-shine"></div>
+              </div>
+              <div class="profile-info">
+                <h2>Mukesh Kumar Mandal</h2>
+                <p>Computer Science Student</p>
+                <div class="profile-badges">
+                  <span class="badge"><i class="fas fa-graduation-cap"></i> Khulna University</span>
+                  <span class="badge"><i class="fas fa-map-marker-alt"></i> Khulna, Bangladesh</span>
+                </div>
+              </div>
+            </div>
+            <div class="profile-face profile-back">
+              <div class="profile-back-content">
+                <h3><i class="fas fa-chart-line"></i> Quick Stats</h3>
+                <div class="profile-stats">
+                  <div class="stat-card">
+                    <i class="fas fa-star"></i>
+                    <span class="stat-value">3+</span>
+                    <span class="stat-title">CGPA</span>
+                  </div>
+                  <div class="stat-card">
+                    <i class="fas fa-trophy"></i>
+                    <span class="stat-value">1</span>
+                    <span class="stat-title">Awards</span>
+                  </div>
+                  <div class="stat-card">
+                    <i class="fas fa-users"></i>
+                    <span class="stat-value">3</span>
+                    <span class="stat-title">Clubs</span>
+                  </div>
+                  <div class="stat-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span class="stat-value">3+</span>
+                    <span class="stat-title">Years Exp</span>
+                  </div>
+                </div>
+                <div class="profile-quote">
+                  <i class="fas fa-quote-left"></i>
+                  <p>Passionate about creating solutions that make a difference</p>
+                  <i class="fas fa-quote-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="flip-button" id="flip-btn" aria-label="Flip profile card">
+            <i class="fas fa-sync-alt"></i>
+          </button>
+          
+          <!-- Social links on profile -->
+          <div class="profile-social">
+            <a href="https://github.com/Mukeshkumarmandal" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mukesh-kumar-mandal-1702702a6" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/mukeshmandal815" target="_blank" aria-label="Twitter">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/mukeshmandal8150/" target="_blank" aria-label="Facebook">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="mouse">
+          <div class="wheel"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+      <div class="container two-col reveal">
+        <div class="about-content">
+          <div class="section-header">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <div class="section-divider"></div>
+          </div>
+          <p>I am <strong>Mukesh Kumar Mandal</strong>, a motivated fourt-year Computer Science & Engineering student at Khulna University. I love building things for the web, with strong front-end development and graphic design skills.</p>
+          <p>I work across AI/ML and software domains and enjoy leadership roles — managing university clubs, events, and workshops. I seek collaborations and internships to grow my skills in fast-paced, real-world projects.</p>
+          
+          <div class="personal-info">
+            <div class="info-item">
+              <i class="fas fa-envelope"></i>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:mukmandal67@gmail.com">mukmandal67@gmail.com</a>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-phone"></i>
+              <div>
+                <strong>Phone</strong>
+                <span>+8801612387079</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <div>
+                <strong>Current Address</strong>
+                <span>Khulna University, Bangladesh</span>
+              </div>
+            </div>
+            <div class="info-item">
+              <i class="fas fa-birthday-cake"></i>
+              <div>
+                <strong>Birth Date</strong>
+                <span>22 April 2003</span>
+              </div>
+            </div>
+          </div>
+          
+          <a class="btn primary" href="CV.pdf" target="_blank" rel="noopener noreferrer">
+            <i class="fas fa-download"></i>
+            Download CV
+          </a>
+        </div>
+        <div class="about-skills">
+          <div class="section-header">
+            <h3><i class="fas fa-star"></i> Core Strengths</h3>
+            <div class="section-divider"></div>
+          </div>
+          <ul class="strengths">
+            <li>
+              <div class="skill-header">
+                <strong>Problem Solving</strong>
+                <span>60%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="--width: 90%;" data-width="90">
+                  <span></span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-header">
+                <strong>Front-End & UI</strong>
+                <span>80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="--width: 88%;" data-width="88">
+                  <span></span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-header">
+                <strong>Full-Stack Concepts</strong>
+                <span>70%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="--width: 75%;" data-width="75">
+                  <span></span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-header">
+                <strong>Leadership</strong>
+                <span>80%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="--width: 85%;" data-width="85">
+                  <span></span>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="skill-header">
+                <strong>Communication</strong>
+                <span>70%</span>
+              </div>
+              <div class="progress">
+                <div class="progress-bar" style="--width: 80%;" data-width="80">
+                  <span></span>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="reveal"><i class="fas fa-tools"></i> Technical Skills</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div class="skill-grid reveal">
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Programming Languages</h3>
+      
+            <div class="skill-tags">
+              <span>C</span>
+              <span>C++</span>
+              <span>PYTHON</span>
+              <span>JAVA</span>
+              <span>JAVASCRIPT</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-globe"></i>
+            </div>
+            <h3>Web Development & Desktop app</h3>
+            <div class="skill-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JAVASCRIPT</span>
+              <span>REACTJS</span>
+              <span>PHP</span>
+              <span>SQL</span>
+              <span>.NET(WINFORMS)</span>
+              <span>C#</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3>AI & Machine Learning</h3>
+            <div class="skill-tags">
+              <span>TENSORFLOW</span>
+              <span>PyTorch</span>
+              <span>OPENAI API</span>
+              <span>PYTHON(SCIKIT-LEARN,PANDAS)</span>
+            </div>
+          </div>
+          <div class="skill-card">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>Databases & Tools</h3>
+            <div class="skill-tags">
+              <span>PostgreSQL</span>
+              <span>SQLITE</span>
+              <span>Git</span>
+              <span>Figma</span>
+              <span>MYSQL</span>
+              <span>WAMPSERVER</span>
+              <span>VS CODE</span>
+              <span>MICROSOFT STUDIO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="reveal"><i class="fas fa-code"></i> Featured Projects</h2>
+          <div class="section-divider"></div>
+        </div>
+        <div id="projects-grid" class="projects-grid reveal"></div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section experience">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="reveal"><i class="fas fa-briefcase"></i> Education & Experience</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="timeline-container reveal">
+          <div class="timeline">
+            <div class="timeline-item">
+              <div class="timeline-date">2023 - Present</div>
+              <div class="timeline-content">
+                <h3>B.Sc. Computer Science & Engineering</h3>
+                <h4>Khulna University,Khulna 9208,Bangladesh </h4>
+                <p>Currently pursuing fourth year student in Computer Science and Engineering .</p>
+                <div class="timeline-tags">
+                  <span>Ongoing</span>
+                </div>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2022</div>
+              <div class="timeline-content">
+                <h3>Higher Secondary Certificate (HSC)</h3>
+                <h4>Greenland Secondary School,Near Sansari Maisthan, Main Road, Biratnagar-9</h4>
+                <p>Completed HSC with focus on Computer Science stream.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2020</div>
+              <div class="timeline-content">
+                <h3>Secondary School Certificate (SSC)</h3>
+                <h4>Ravi Maya Sahashiksha Academy,Inaruwa-3,sunsari Nepal</h4>
+                <p>Completed SSC with excellent academic records.</p>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-date">2024</div>
+              <div class="timeline-content">
+                <h3>UI/UX Design Intern</h3>
+                <h4>CodSoft</h4>
+                <p>Worked on UI/UX designs and front-end implementation for client projects.</p>
+                <div class="timeline-tags">
+                  <span>Internship</span>
+                  <span>Remote</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Enhanced Professional Experience -->
+        <div class="experience-highlights reveal">
+          <div class="section-header">
+            <h3><i class="fas fa-trophy"></i> Professional Highlights & Achievements</h3>
+            <div class="section-divider"></div>
+          </div>
+          
+          <div class="experience-grid">
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <i class="fas fa-users"></i>
+              </div>
+              <h4>Campus Leadership & Involvement</h4>
+              <ul>
+                <li>Active member & organizer in university clubs</li>
+                <li>Managed student engagement and promotions</li>
+                <li>Hosted workshops, seminars, and tech events</li>
+                <li>Coordinated event logistics and planning</li>
+              </ul>
+            </div>
+            
+            <div class="highlight-card">
+              <div class="highlight-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <h4>Web & Graphic Design</h4>
+              <ul>
+                <li>Designed interactive websites and interfaces</li>
+                <li>Created promotional graphics and branding</li>
+                <li>Developed logos and social media visuals</li>
+                <li>UI/UX design for various projects</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications Grid -->
+        <div class="section-header reveal">
+          <h3><i class="fas fa-award"></i> Certifications & Achievements</h3>
+          <div class="section-divider"></div>
+        </div>
+        <div class="certifications-grid reveal">
+          <div class="cert-badge">
+            <div class="cert-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h4>Poster Presentation - 3rd Place Winner at Spark Tank 1.0 Organizied by cluster  club of  Khulna University  </h4>
+            <p>Desktop APP- AI Movie Recommender</p>
+            <p>A software engineering project of 5th sem  </p>
+          </div>
+          <div class="cert-badge">
+            <div class="cert-icon">
+              <i class="fas fa-certificate"></i>
+            </div>
+            <h4>UI/UX Internship</h4>
+            <p>Completed at CodSoft</p>
+          </div>
+          <div class="cert-badge">
+            <div class="cert-icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3>Participants  </h3>
+            <h4>1st Technoxian Bangladesh  </h4>
+            <h4> National round 2024 </h4>
+            <h4> Enter into a world's largest Robotics competition </h4>
+            <p>American International University-Bangladesh(AIUB)</p>
+          </div>
+          <div class="cert-badge">
+            <div class="cert-icon">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <h4>Event Management</h4>
+            <p> university-level</p>
+          </div>
+        </div>
+
+        <!-- Languages -->
+        <div class="section-header reveal">
+          <h3><i class="fas fa-language"></i> Languages</h3>
+          <div class="section-divider"></div>
+        </div>
+        <div class="languages-display reveal">
+          <span class="language-tag">
+            <i class="fas fa-flag-usa"></i>
+            English
+          </span>
+          <span class="language-tag">
+            <i class="fas fa-flag"></i>
+            Nepali
+          </span>
+          <span class="language-tag">
+            <i class="fas fa-flag"></i>
+            Maithili
+          </span>
+          <span class="language-tag">
+            <i class="fas fa-flag-bd"></i>
+            Bengali
+          </span>
+          <span class="language-tag">
+            <i class="fas fa-flag-in"></i>
+            Hindi
+          </span>
+          </span>
+          <span class="language-tag">
+            <i class="fas fa-flag-in"></i>
+            Bhojpuri
+          </span>
+        </div>
+
+        <!-- University Clubs -->
+        <div class="section-header reveal">
+          <h3><i class="fas fa-university"></i> University Club Involvement</h3>
+          <div class="section-divider"></div>
+        </div>
+        <div class="clubs-container reveal">
+          <div class="club-card">
+            <div class="club-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h4>Khulna University Innovation Club</h4>
+            <p>Khulna University</p>
+          </div>
+          <div class="club-card">
+            <div class="club-icon">
+              <i class="fas fa-music"></i>
+            </div>
+            <h4>Rhythm (Dance club )</h4>
+            <p>Khulna University</p>
+          </div>
+          <div class="club-card">
+            <div class="club-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h4>Cluster(A club of CSE Discipline)</h4>
+            <p>Khulna University</p>
+          </div>
+        </div>
+
+        <!-- Declaration -->
+        <div class="declaration-box reveal">
+          <div class="declaration-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <p>
+            I have a strong belief that my combination of skills and dedicated approach would allow me to make a tangible and positive contribution here. I'm seeking a team where I can actively solve problems, support my colleagues, and help drive key projects forward. You can count on me to bring consistent effort, a collaborative spirit, and a genuine commitment to maintaining the quality of work. I am prepared to invest myself in this work and grow alongside your team to achieve our shared objectives.
+          </p>
+          <div class="declaration-signature">
+            <strong>— Mukesh Kumar Mandal</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="reveal"><i class="fas fa-envelope"></i> Get In Touch</h2>
+          <div class="section-divider"></div>
+        </div>
+        
+        <div class="contact-wrapper reveal">
+          <div class="contact-info">
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <h3>Email</h3>
+              <a href="mailto:mukesh220242@cseku.ac.bd">mukesh220242@cseku.ac.bd</a>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <h3>Whatsapp</h3>
+              <a href="https://wa.me/9779807308944">+977 9807308944</a>
+            </div>
+            
+            <div class="contact-card">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <h3>Location</h3>
+              <p>Khulna, Bangladesh</p>
+            </div>
+            
+            <div class="contact-social">
+              <h3>Connect with me</h3>
+              <div class="social-links">
+                <a href="https://github.com/Mukeshkumarmandal" aria-label="GitHub" target="_blank">
+                  <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/mukesh-kumar-mandal-1702702a6" aria-label="LinkedIn" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://x.com/mukeshmandal815" aria-label="Twitter" target="_blank">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.facebook.com/mukeshmandal8150/" aria-label="Facebook" target="_blank">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://www.researchgate.net/profile/Mukesh-Mandal-6" aria-label="ResearchGate" target="_blank">
+                  <i class="fab fa-researchgate"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">
+                <i class="fas fa-user"></i>
+                Your Name
+              </label>
+              <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+            
+            <div class="form-group">
+              <label for="email">
+                <i class="fas fa-envelope"></i>
+                Email Address
+              </label>
+              <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            
+            <div class="form-group">
+              <label for="subject">
+                <i class="fas fa-tag"></i>
+                Subject
+              </label>
+              <input type="text" id="subject" name="subject" required placeholder="Enter subject">
+            </div>
+            
+            <div class="form-group">
+              <label for="message">
+                <i class="fas fa-comment"></i>
+                Message
+              </label>
+              <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+            </div>
+            
+            <button type="submit" class="btn primary submit-btn">
+              <i class="fas fa-paper-plane"></i>
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <a href="#" class="brand">
+            <span class="brand-icon">💻</span>
+            <span>Mukesh Kumar Mandal</span>
+          </a>
+          <p>Computer Science Student & Developer</p>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Quick Links</h4>
+            <a href="#home">Home</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#contact">Contact</a>
+          </div>
+          
+          <div class="footer-column">
+            <h4>Skills</h4>
+            <a href="#skills">Web Development</a>
+            <a href="#skills">AI/ML</a>
+            <a href="#skills">Programming</a>
+            <a href="#skills">UI/UX Design</a>
+          </div>
+        </div>
+        
+        <div class="footer-social">
+          <h4>Follow Me</h4>
+          <div class="social-icons">
+            <a href="https://github.com/Mukeshkumarmandal" aria-label="GitHub" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/mukesh-kumar-mandal-1702702a6" aria-label="LinkedIn" target="_blank">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://x.com/mukeshmandal815" aria-label="Twitter" target="_blank">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.facebook.com/mukeshmandal8150/" aria-label="Facebook" target="_blank">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Mukesh Kumar Mandal. All rights reserved.</p>
+        <p>Designed & Developed with <i class="fas fa-heart"></i> by Mukesh</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal" aria-hidden="true">
+    <div class="modal-panel">
+      <button class="modal-close" id="modal-close" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modal-content"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
